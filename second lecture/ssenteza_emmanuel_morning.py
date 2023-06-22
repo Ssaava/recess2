@@ -1,6 +1,6 @@
 # Day 2 - Recess
 
-"""
+'''
  if statement:
  If statement is used to execute a block of code based on a certain condition if true
  multiple if staements can be created with the use of elif 
@@ -11,9 +11,7 @@ elif someother condition true:
     do something in this block
 else:
     if all false then do something in this final block
-'''
 
-'''
  Loops
  The for loop:
  The for loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable objects.
@@ -56,10 +54,10 @@ def some_function():
      code block will be empty, but the function is syntactically correct
 
 # try-except statement:
- The try-except statement is used to handle exceptions that may occur during the execution of code.
- catch blocks are used to handle exceptions thus preventing the program from crashing.
+# The try-except statement is used to handle exceptions that may occur during the execution of code.
+# catch blocks are used to handle exceptions thus preventing the program from crashing.
 
- Example:
+# Example:
 try:
      code that may raise an exception
 except SomeException:
@@ -70,22 +68,22 @@ else:
      code executed if no exceptions are raised
 finally:
      code executed regardless of whether an exception occurred or not
-"""
 
+'''
 
 # Exercise 1
 # Prompting  a student to enter their mental health rating
-print("Welcome to the Student Mental Health Survey")
+print("Student Mental Health Rating Review")
 
-responses = []
+Prompts = []
 
-num_students = int(input("Enter the number of students: "))
+Students = int(input("Enter the number of students: "))
 
-for i in range(1, num_students + 1):
-    response = input(
+for i in range(1, Students + 1):
+    prompt = input(
         f"Student {i}, please rate your mental health on a scale of 1-10: ")
-    responses.append(response)
+    Prompts.append(prompt)
 
 print("\n--- Survey Results ---")
-for i, response in enumerate(responses):
-    print(f"Student {i + 1}: {response}")
+for i, Prompts in enumerate(Prompts):
+    print(f"Student {i + 1}: {Prompts}")
