@@ -49,3 +49,11 @@ print(names[::3])
 
 # Accessing items that are at the end of the list
 print(names[-1])
+
+
+# web scraping
+'''
+extraxt all bird species from this url https://xeno-canto.org
+2: url https://xeno-canto.org/api/2/recordings and generate the csv file for the bird species, family snf more
+
+'''
